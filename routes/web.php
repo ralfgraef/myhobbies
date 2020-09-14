@@ -1,5 +1,6 @@
 <?php
 
+use Illuminate\Routing\Route as RoutingRoute;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -20,6 +21,8 @@ Route::get('/', function () {
 Route::get('/info', function () {
     return view('info');
 });
+
+Route::get('/test/{name}/{age}', 'HobbyController@index');
 
 Auth::routes();
 
