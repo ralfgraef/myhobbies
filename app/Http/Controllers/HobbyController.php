@@ -14,7 +14,8 @@ class HobbyController extends Controller
      */
     public function index()
     {
-        dd('index');
+        $hobbies = Hobby::all();
+        dd($hobbies);
     }
 
     /**
